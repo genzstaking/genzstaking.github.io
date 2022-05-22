@@ -1,3 +1,4 @@
+# GEN2-POOL
 ## Welcome to Gen2-Pool
 This is a community that aims to help everyone to know more about the cryptocurrency world, its cons & prons, make income, invest over that, start their own nodes and pools, and start staking. As we strongly believe decentralization we will do our best to help world to go the way.
 
