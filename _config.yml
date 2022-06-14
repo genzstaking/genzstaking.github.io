@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: GenZ Pool
+title: GenZ Bank
 email: info@genz.crypto
 description: >- # this means to ignore newlines until "baseurl:"
     We are a team of passionate want to help you make a better insight 
@@ -28,13 +28,13 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-twitter_username: genz-pool
-github_username:  genz-pool
+#twitter_username: genz-pool
+github_username:  genz-bank
 #dribbble_username: genz-pool
-facebook_username: genz-pool
+#facebook_username: genz-pool
 #flickr_username: genz-pool
-instagram_username: genz-pool
-linkedin_username: genz-pool
+#instagram_username: genz-pool
+#linkedin_username: genz-pool
 #pinterest_username: genz-pool
 #youtube_username: genz-pool
 rss: rss

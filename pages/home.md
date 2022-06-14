@@ -44,25 +44,40 @@ offer you many tools to setup your own.
 
 ## Why stake with genz Pool?
 
-genz Pool provides highly-secure, non-custodial staking infrastructure for portfolio optimization. With expert analysts and dedicated support, P2P guarantees a successful staking experience. All we build and launch are open-source and you are wellcome to check and upgrade.
+genz Pool provides highly-secure, non-custodial staking infrastructure for 
+portfolio optimization. With expert analysts and dedicated support, P2P 
+guarantees a successful staking experience. All we build and launch are 
+open-source and you are wellcome to check and upgrade.
 
 
 ### Simplicity
 
-Stake your assets with genz Pool and earn staking rewards from day one. We remove the need for specialised technical knowledge, infrastructure and network control, letting you focus on what matters the most.
+Stake your assets with genz Pool and earn staking rewards from day one. We 
+remove the need for specialised technical knowledge, infrastructure and 
+network control, letting you focus on what matters the most.
 
-On the other hand, our tools are so simple to use and launch a new staking pool. We can help you to launch, monitor and maintain your own.
+On the other hand, our tools are so simple to use and launch a new staking 
+pool. We can help you to launch, monitor and maintain your own.
 
 ### Security & Infrastructure
 
-Our infrastructure was built with maximum security and performance at the forefront. With an average uptime of 99%, genz Pool ensures that your rewards are generated continuously whilst mitigating all performance-related risks.
+Our infrastructure was built with maximum security and performance at the 
+forefront. With an average uptime of 99%, genz Pool ensures that your 
+rewards are generated continuously whilst mitigating all performance-related 
+risks.
 
 ### Networks Expertise
 
-Our team provides exhaustive financial analysis to provide support for top-tier staking networks. With an in-house team of analysts, we conduct constant network monitoring so you can enjoy high profitability with peace of mind.
+Our team provides exhaustive financial analysis to provide support for 
+top-tier staking networks. With an in-house team of analysts, we conduct 
+constant network monitoring so you can enjoy high profitability with 
+peace of mind.
 
-Our developers made set of tools for each network. These suits help you to invest like an expert.
+Our developers made set of tools for each network. These suits help you 
+to invest like an expert.
 
 ### Smart Governance
 
-At genz Pool we are firm believers in the value of decentralization and we participate in active governance across all supported networks to ensure the interests of the community, as well as our stakers, is supported.
+At genz Pool we are firm believers in the value of decentralization and we 
+participate in active governance across all supported networks to ensure 
+the interests of the community, as well as our stakers, is supported.
