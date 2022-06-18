@@ -1,11 +1,11 @@
 ---
-layout:         post
-title:          "How to Stake Cardano (ADA)"
-date:           2022-06-19 04:06:44 +0430
-categories:     Cardano
-tags:           ["Cardano", "Staking", "Stake Pool"]
+layout: post
+title:  "How to Stake Cardano ADA"
+description: "test" 
+date:   2022-06-19 00:06:44 +0430
+categories: Cardano
+tags: ["Cardano", "Staking", "Stake Pool"]
 ---
-
 Staking is a process where token holders deposit – or lock away – a number of tokens to become active participants 
 in running the network. More specifically, they become “validators” (also known as “stakers”) whose role is to 
 propose and verify new data that’s added to the blockchain.
@@ -66,7 +66,7 @@ levels are low.
 There’s a choice of two different digital wallets you can download to store and start staking your ADA tokens:
 
 * Daedalus
-*‌ Yoroi
+* Yoroi
 
 Daedalus is a wallet that can be downloaded onto your desktop computer and is aimed at more intermediate-level 
 users. The Yoroi wallet is a much more suitable option for beginners that, when downloaded, sits in your web 
