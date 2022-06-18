@@ -1,10 +1,10 @@
 ---
-layout: post
-title:  "How to Stake Cardano (ADA)"
-description:‌ "When staking ADA tokens, users can choose whether to outsource the process to delegate stake-pool operators or run their own Cardano staking pool."
-date:   2022-06-19 04:06:44 +0430
-categories: Cardano
-tags: ["Cardano", "Staking", "Stake Pool"]
+layout:         post
+title:          "How to Stake Cardano (ADA)"
+description:‌    "When staking ADA tokens, users can choose whether to outsource the process to delegate stake-pool operators or run their own Cardano staking pool." 
+date:           2022-06-19 04:06:44 +0430
+categories:     Cardano
+tags:           ["Cardano", "Staking", "Stake Pool"]
 ---
 
 Staking is a process where token holders deposit – or lock away – a number of tokens to become active participants 
