@@ -1,0 +1,10 @@
+<h5>Networks</h5>
+<ul class="list-unstyled">
+	{% for network in site.networks %}
+	<li class="mb-2">
+		<a href="{{ network.url | relative_url }}">
+			<span class="username">{{ network.title }}</span>
+		</a>
+	</li>
+	{% endfor %}
+</ul>

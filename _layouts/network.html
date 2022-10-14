@@ -1,0 +1,80 @@
+---
+layout: default
+---
+
+<div class="container-fluid">
+	<section class="row">
+		<div class="col">
+			<h1>
+				<img src="{{ page.icon | relative_url }}" 
+					width="64px"
+					heigh="64px">
+				{{ page.title | escape }}
+			</h1>
+			<p>{{ page.description | escape }}</p>
+		</div>
+	</section>
+	
+	
+	<section class="row">
+		<div class="col">
+			<h2>Market</h2>
+			<table class="table">
+				<thead>
+					<tr>
+						<td>Title</td>
+						<td>Value</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Main Coin Symbol</td>
+						<td>{{ page.network.symbol | upcase }}</td>
+					</tr>
+
+					<tr>
+						<td>Network Symbol</td>
+						<td>{{ page.network.symbol }}</td>
+					</tr>
+					<tr>
+						<td>Network Title</td>
+						<td>{{ page.title }}</td>
+					</tr>
+					<tr>
+						<td>Network Fee</td>
+						<td>{{ page.network.fee }}</td>
+					</tr>
+					<tr>
+						<td>Network Inflation</td>
+						<td>{{ page.network.inflation }}</td>
+					</tr>
+					
+					
+					
+					<tr>
+						<td>P2P Wallets</td>
+						<td>
+							<ul>
+							{% for wallet in page.p2p_wallets %}
+								<li>{{ wallet }} </li>
+							{% endfor %}
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>Slashing Policies</td>
+						<td>
+							<ul>
+							{% for policy in page.slashing %}
+								<li>{{ policy }} </li>
+							{% endfor %}
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+</div>
+
+{{ content }}

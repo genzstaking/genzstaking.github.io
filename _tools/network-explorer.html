@@ -1,0 +1,34 @@
+--- 
+title: Network Explorer
+---
+
+
+<section 
+	id="networks-explorer" 
+	class="container-fluid py-5">
+	<div class="row row-cols-1 row-cols-md-3 g-4">
+		{% for network in site.networks %}
+		<div 
+			id="{{ network.symbol }}" 
+			class="col">
+			<div class="card">
+				<div class="card-body text-center">
+					<h3 class="card-title">{{ network.title }}</h3>
+					<img 
+						src="{{ network.icon | relative_url }}" 
+						alt="{{ netork.title }}" 
+						width="148px"
+						height="148px">
+					<p class="scard-text">{{ network.description }}</p>
+					<p>Annual Reward Rate<br/>
+					<strong>{{ network.staking.apr }}%</strong>
+					</p>
+				</div>
+				<div class="card-footer text-muted">
+					<a href="{{ network.url | relative_url }}">Stake on {{ network.title }}</a>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</section>
