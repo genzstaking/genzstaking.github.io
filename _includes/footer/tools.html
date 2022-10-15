@@ -1,28 +1,10 @@
 <h5>Tools</h5>
 <ul class="list-unstyled">
+	{% for tool in site.tools %}
 	<li class="mb-2">
-		<a href="{% link about.html %}">
-			<span class="username">About Us</span>
+		<a href="{{ tool.url | relative_url }}">
+			<span class="username">{{ tool.title }}</span>
 		</a>
 	</li>
-	<li class="mb-2">
-		<a href="{% link team.html %}">
-			<span class="username">Team</span>
-		</a>
-	</li>
-	<li class="mb-2">
-		<a href="{% link jobs.html %}">
-			<span class="username">Jobs</span>
-		</a>
-	</li>
-	<li class="mb-2">
-		<a href="{% link posts.html %}">
-			<span class="username">News & Post</span>
-		</a>
-	</li>
-	<li class="mb-2">
-		<a href="{% link contact-us.html %}">
-			<span class="username">Contact Us</span>
-		</a>
-	</li>
+	{% endfor %}
 </ul>

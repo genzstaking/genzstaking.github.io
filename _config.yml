@@ -34,6 +34,8 @@ collections:
     output: true
   tools:
     output: true
+  jobs:
+    output: true
   
 
 
@@ -153,6 +155,12 @@ defaults:
     values:
       layout: "page"
       category: "tools"
+      permalink: "/:categories/:title:output_ext"
+  - scope:
+      type: "jobs"
+    values:
+      layout: "job"
+      category: "jobs"
       permalink: "/:categories/:title:output_ext"
 
 
