@@ -7,12 +7,13 @@
 # in the templates via {{ site.myvariable }}.
 ################################################################################
 title: GenZ Staking
-logo: /assets/logo.svg
+logo: /logo.svg
+favicon: /logo-favicon.png
 email: info@genzstaking.com
 description: >- 
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  We are a team of passionate want to help you make a better insight over the 
+  world of cryptocurrencies, mining, staking and etc. Also, we will help you 
+  build your staking nodes and stake over the best nodes.
 
 ################################################################################
 # Where things are
@@ -76,7 +77,7 @@ keep_files:
 # default value is utf-8 starting in 2.0.0, and nil before 2.0.0, which will 
 # yield the Ruby default of ASCII-8BIT
 #
-encoding=: "utf-8"
+encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 strict_front_matter: false
 
@@ -121,7 +122,7 @@ host: 127.0.0.1
 #
 # the subpath of your site, e.g. /blog
 #
-baseurl: "/" 
+baseurl: "" 
 
 #
 # the base hostname & protocol for your site, e.g. http://example.com
@@ -200,10 +201,9 @@ ignore_theme_config: true
 # and configure order of the links.
 #
 header_pages:
-  - businesses.html
-  - roles.html
-  - networks.html
-  - resources.html
+  - posts.html
+  - jobs.html
+  - contact-us.html
   - about.html
 
 #
@@ -211,7 +211,7 @@ header_pages:
 # icon, by adding one or more of the following options in your config:
 #
 #twitter_username: jekyllrb
-github_username:  genz-bank
+github_username:  genzstaking
 #dribbble_username: jekyll
 #facebook_username: jekyll
 #flickr_username: jekyll
