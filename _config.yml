@@ -100,6 +100,7 @@ whitelist: []
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 
 ################################################################################
@@ -127,7 +128,7 @@ baseurl: ""
 #
 # the base hostname & protocol for your site, e.g. http://example.com
 #
-url: "" 
+url: "https://genzstaking.com" 
 show_dir_listing: false
 
 
@@ -146,22 +147,26 @@ defaults:
     values:
       layout: "network"
       category: "network"
+      sitemap: true
   - scope:
       type: "posts"
     values:
       layout: "post"
       category: "post"
+      sitemap: true
   - scope:
       type: "tools"
     values:
       layout: "page"
       category: "tools"
+      sitemap: true
       permalink: "/:categories/:title:output_ext"
   - scope:
       type: "jobs"
     values:
       layout: "job"
       category: "jobs"
+      sitemap: true
       permalink: "/:categories/:title:output_ext"
 
 
