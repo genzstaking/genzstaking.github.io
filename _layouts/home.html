@@ -6,15 +6,14 @@ layout: vendor/compress
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
 <head>
-    {% include meta.html %}
+{% include meta.html %}
 
-    {%- feed_meta -%}
-    {%- if jekyll.environment == 'production' and site.google_analytics -%}
-    {%- include analytics.html -%}
-    {%- endif -%}
+{%- feed_meta -%}
+{%- if jekyll.environment == 'production' and site.google_analytics -%}
+{%- include analytics.html -%}
+{%- endif -%}
 
-    {%- include head.html -%}
-
+{%- include head.html -%}
 </head>
 
 <body class="en">
