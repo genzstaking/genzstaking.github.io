@@ -24,9 +24,15 @@ permalink: /posts/
 			{%- for post in posts -%}
 			<div class="col">
 				<div class="card h-100">
+					{%- if post.banner -%}
+					<img src="{{ post.banner | relative_url }}" 
+						class="card-img-top" 
+						alt="{{ post.title | escape }}">
+					{%- else -%}
 					<img src="{{ '/assets/images/post-banner-default.svg' | relative_url }}" 
 						class="card-img-top" 
 						alt="{{ post.title | escape }}">
+					{%- endif -%}
 					<div class="card-body">
 						<h5 class="card-title"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h5>
 						<span class="">{{ post.date | date: date_format }}</span>

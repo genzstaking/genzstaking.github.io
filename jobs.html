@@ -175,12 +175,23 @@ permalink: /jobs/
 		{% for job in site.jobs %}
 		<div class="col">
 			<a class="card text-decoration-none bg-light bg-gradient"
-				href="{{ job.url | relative_url }}">
+				href="{{ job.apply_url }}">
 				<div class="card-body">
 					<h3 class="">{{ job.title }}</h3>
-					<div class="">
-						<i class="" role="icon"></i>
-						<p class="">{{ job.place }}</p>
+					<p> {{ job.description }}</p>
+					<div style="font-size: 10px;">
+						<p class="p-0 m-0"> 
+							<i class="fas fa-map-marker-alt"></i>
+							{{ job.place }}
+						</p>
+						<p class="p-0 m-0"> 
+							<i class="fas fa-clock"></i>
+							{{ job.start_date }}
+						</p>
+						<p class="p-0 m-0"> 
+							<i class="fas fa-file-signature"></i>
+							{{ job.type }}
+						</p>
 					</div>
 				</div>
 			</a>
