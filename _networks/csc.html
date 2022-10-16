@@ -1,0 +1,52 @@
+---
+title: "Coinex Smart Coin"
+icon: "/assets/images/networks-logo/csc.svg"
+
+network:
+  symbol: "CSC"
+  fee: 1.0
+  epoch: 0.5
+  inflation: 0.0
+  token:
+    name: "CET"
+    price: 0.045
+
+sites:
+  - name: "Main"
+    url: "https://www.coinex.org"
+  - name: "Documentation"
+    url: "https://docs.coinex.org/#/en-us/introduction"
+  - name: "Source"
+    url: "https://github.com/coinex-smart-chainex"
+  - name: "explorer"
+    url: "https://www.coinex.net"
+
+staking:
+  min: 1000
+  apr: 5.0
+
+validator:
+  cost: 10000
+  staked: 10000
+  hardware: 8CPU_16GRAM_500GS
+  reward:
+    constant: 0
+    percentage: 7.0
+  slashing:
+    - 'Uptime'
+    - 'Duble signe'
+
+competitors:
+  if2pool:
+    staked: 64039735.0
+    wallets: 
+      - description: 'IFPool(https://ifpool.io), CSC node staking protocol'
+        address: '0xb0dC7A676Ab09868eBef78E16e6AEA9e79F0f9Cf'
+  genz:
+    wallets:
+      - title: 'Main Wallet'
+        description: "Fee 2%"
+        address: '0xEAfF084e6da9aFE8EcAB4d85de940e7d3153296F'
+        recipient: '0x785f9C31920A827601f679eCEE29A6FB47C31fc3'
+---
+

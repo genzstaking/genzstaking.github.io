@@ -2,79 +2,62 @@
 layout: default
 ---
 
-<div class="container-fluid">
-	<section class="row">
-		<div class="col">
-			<h1>
-				<img src="{{ page.icon | relative_url }}" 
+ 
+<section class="container-fluid">
+	<div class="container py-5 my-5 rounded shadow"
+		id="staking-info">
+		<div class="row">
+			<div class="col-12 d-flex flex-column align-items-center">
+				<img src="{{ page.icon | relative_url }}"
 					width="64px"
-					heigh="64px">
-				{{ page.title | escape }}
-			</h1>
-			<p>{{ page.description | escape }}</p>
+					height="64px">
+				<h2>{{ page.title }}</h2>
+				<p>{{ page.staking.apr }}% </p>
+				<p>Annual percentage rate (APR)</p>
+				<p>{{ page.validator.percentage }}% {{ site.title }} fee</p>
+			</div>
 		</div>
-	</section>
-	
-	
-	<section class="row">
-		<div class="col">
-			<h2>Market</h2>
-			<table class="table">
-				<thead>
-					<tr>
-						<td>Title</td>
-						<td>Value</td>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Main Coin Symbol</td>
-						<td>{{ page.network.symbol | upcase }}</td>
-					</tr>
+		<div class="row">
+			{%- for wallet in page.competitors.genz.wallets -%}
+			<div class="col-12 d-flex flex-row align-items-stretch alert alert-secondary"
+				role="alert">
+				<spam class="flex-fill text-truncate">{{ wallet.address }}</spam>
+				<button class="btn align-self-end"
+					onclick="copyAddressToClipboard('{{wallet.address}}')">
+					<i class="far fa-copy"></i>
+				</button>
+			</div>
+			{%- endfor -%}
+		</div>
+		<div class="row">
+			<a href="#latest-blog">How to delegate?</a>
+		</div>
+	</div>
+</section>
 
-					<tr>
-						<td>Network Symbol</td>
-						<td>{{ page.network.symbol }}</td>
-					</tr>
-					<tr>
-						<td>Network Title</td>
-						<td>{{ page.title }}</td>
-					</tr>
-					<tr>
-						<td>Network Fee</td>
-						<td>{{ page.network.fee }}</td>
-					</tr>
-					<tr>
-						<td>Network Inflation</td>
-						<td>{{ page.network.inflation }}</td>
-					</tr>
-					
-					
-					
-					<tr>
-						<td>P2P Wallets</td>
-						<td>
-							<ul>
-							{% for wallet in page.p2p_wallets %}
-								<li>{{ wallet }} </li>
-							{% endfor %}
-							</ul>
-						</td>
-					</tr>
-					<tr>
-						<td>Slashing Policies</td>
-						<td>
-							<ul>
-							{% for policy in page.slashing %}
-								<li>{{ policy }} </li>
-							{% endfor %}
-							</ul>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	</section>
-</div>
+
 
 {{ content }}
+
+
+<script>
+function copyAddressToClipboard(address) {
+	// Copy the text inside the text field
+	navigator.clipboard.writeText(address);
+	
+	// Alert the copied text
+	var alert = document.getElementById("clipboard-alert");
+	if (alert.style.display === "block") {
+		alert.style.display = "none";
+	} else {
+		alert.style.display = "block";
+		alert.style.opacity = "1";
+	}
+} 
+</script>
+<div class="alert alert-warning alert-dismissible fade position-absolute bottom-0 end-0 " 
+	role="alert" 
+	id="clipboard-alert">
+	<strong id="showText"></strong> Address is copied
+ </div>
+ 
