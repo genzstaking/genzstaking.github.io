@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "How to Stake Cardano ADA"
 description: "When staking ADA tokens, users can choose whether to outsource the process to delegate stake-pool operators or run their own Cardano staking pool." 
 date:   2022-06-19 00:06:44 +0430
