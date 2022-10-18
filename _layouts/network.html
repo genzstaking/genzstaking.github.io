@@ -14,7 +14,7 @@ layout: default
 				<h2>{{ page.title }}</h2>
 				<p>{{ page.staking.apr }}% </p>
 				<p>Annual percentage rate (APR)</p>
-				<p>{{ page.validator.percentage }}% {{ site.title }} fee</p>
+				<p>{{ page.validator.reward.percentage }}% {{ site.title }} fee</p>
 			</div>
 		</div>
 		<div class="row">
@@ -35,7 +35,21 @@ layout: default
 	</div>
 </section>
 
-
+<script type="application/json" id="network-data">
+{
+	"title": {{ page.title | jsonify }},
+	"description": {{ page.description | jsonify }},
+	"icon": {{ page.icon | relative_url  | jsonify }},
+	"url":  {{ page.url | relative_url  | jsonify }},
+	"network": {{ page.network | jsonify }},
+	"sites": {{ page.sites | jsonify }},
+	"staking": {{ page.staking | jsonify }},
+	"validator": {{ page.validator | jsonify }},
+	"competitors": {{ page.competitors | jsonify }}
+}
+</script>
+<section class="container-fluid" id="app-staking-reward-calculator"></section>
+<script src="{{ '/assets/js/app-staking-reward-calculator.js' | relative_url }}"></script>
 
 {{ content }}
 
