@@ -56,8 +56,12 @@
 			</tbody>
 		</table>
 		<div>
-			<button type="button" class="mx-1 btn btn-primary">Stake Now</button>
-			<button type="button" class="mx-1 btn btn-info">Get offer</button>
+			<a type="button" 
+				class="mx-1 btn btn-primary"
+				t-att-href="'/dashboard/#/staking/' + env.network.network.symbol">Stake Now</a>
+			<a type="button" 
+				class="mx-1 btn btn-info"
+				href="mailto:info@genzstakig.com">Get offer</a>
 		</div>
 	</div>
 </div>`;
